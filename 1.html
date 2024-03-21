@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submit Details</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="info">
+            <form onsubmit="submitForm(event)">
+                <h2>LOGIN</h2><br>
+                <h3>Welcome user!</h3>
+                <input class="email" type="email" placeholder="Email" id="email"><br>
+                <input class="password" type="password" placeholder="Password" id="password"><br>
+                <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+            </form>
+        </div>
+
+        <div class="popup" id="popup">
+            <img src="assets/img/10.jpg">
+            <h2>Thank You....!</h2>
+            <p>Your Details have Been Successfully Submitted. Thanks !</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+
+    </div>
+
+    <script src="assets/script.js" type="text/javascript"></script>
+
+</body>
+
+</html>
